@@ -2,12 +2,11 @@ class user {
   #Name;
   #LName;
   #City;
-  UserBook = [];
-
-  constructor(FirstName, LastName, CityName) {
+    constructor(FirstName, LastName, CityName) {
     this.#Name = FirstName;
     this.#LName = LastName;
     this.#City = CityName;
+    this.UserBook = [];
   }
   AddBookToUser(book) {
     this.UserBook.push(book);
