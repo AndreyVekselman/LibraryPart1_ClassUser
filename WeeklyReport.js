@@ -11,9 +11,11 @@ class WeeklyReport {
           element.LName +
           " from " +
           element.City +
-          " holds books: \n" +
-          element.UserBook
+          " holds books: \n"
       );
+      element.UserBook.forEach((element) => {
+        console.log(element.BookName);
+      });
     });
   }
 }
