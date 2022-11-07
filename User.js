@@ -10,10 +10,20 @@ class User {
     this.City = CityName;
   }
   AddBookToUser(book) {
-    this.UserBook.push(book);
-    this.InformUsers(book);
+    if (book.BorrowBook) {
+      this.UserBook.push(book);
+      this.InformUsers(book);
+      book.BorrowBook = false;
+    } else {
+      console.log(
+        this.Name +
+          ", sorry, but a  book " +
+          book.BookName +
+          " all ready borrowed"
+      );
+    }
   }
   InformUsers(book) {
-    console.log(this.Name + " borrow  " + book);
+    console.log(this.Name + " borrow  " + book.BookName);
   }
 }
