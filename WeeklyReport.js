@@ -11,7 +11,7 @@ class WeeklyReport {
           element.LName +
           " from " +
           element.City +
-          " holds books: " +
+          " holds books: \n" +
           element.UserBook
       );
     });
