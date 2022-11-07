@@ -1,6 +1,6 @@
 // creaete a users
-const User1 = new user("Shoam", "Pupkin", "TA");
-const User2 = new user("Itay", "Levi", "Haifa");
+const User1 = new User("Shoam", "Pupkin", "TA");
+const User2 = new User("Itay", "Levi", "Haifa");
 
 /// create a users Books and inform
 User1.AddBookToUser("War and Peace");
