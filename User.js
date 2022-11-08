@@ -19,7 +19,7 @@ class User {
         this.Name +
           ", sorry, but a  book " +
           book.BookName +
-          " all ready borrowed"
+          " already borrowed"
       );
     }
   }

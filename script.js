@@ -37,7 +37,5 @@ User3.AddBookToUser(Book2);
 const report = new WeeklyReport();
 report.AddUser(User1);
 report.AddUser(User2);
-// report.PrintReport();
-User1.UserBook.forEach((element) => {
-  console.log(element.BookName);
-});
+report.AddUser(User3);
+report.PrintReport();
