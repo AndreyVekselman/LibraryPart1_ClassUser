@@ -4,17 +4,12 @@ class WeeklyReport {
     this.AllUsers.push(user);
   }
   PrintReport() {
-    this.AllUsers.forEach((element) => {
+    this.AllUsers.forEach((user) => {
       console.log(
-        element.Name +
-          " " +
-          element.LName +
-          " from " +
-          element.City +
-          " holds books: \n"
+        user.Name + " " + user.LName + " from " + user.City + " holds books: \n"
       );
-      element.UserBook.forEach((element) => {
-        console.log(element.BookName);
+      user.UserBook.forEach((book) => {
+        console.log(book.BookName);
       });
     });
   }
