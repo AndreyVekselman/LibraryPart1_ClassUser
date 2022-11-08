@@ -1,4 +1,3 @@
-//comment just for comment
 // create a users
 const User1 = new User("Shoam", "Pupkin", "TA");
 const User2 = new User("Itay", "Levi", "Haifa");
